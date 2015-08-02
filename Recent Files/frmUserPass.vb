@@ -1,7 +1,7 @@
 ﻿Public Class frmUserPass
     Private Sub frmUserPass_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Not System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory & "\index.txt") Then ' checks if a password is not set
-            showMessage("JAM Folder Protector" + vbCrLf + "Set a password!")
+            MessageBox.Show("Set a password!", "JAM Folder Protector", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 
