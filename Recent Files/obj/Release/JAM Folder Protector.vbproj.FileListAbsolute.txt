@@ -1,27 +1,22 @@
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\JAM.exe.config
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM Folder Protector.vbprojResolveAssemblyReference.cache
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\Interop.AcroPDFLib.dll
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\AxInterop.AcroPDFLib.dll
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM Folder Protector.vbproj.ResolveComReference.cache
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmEdit.resources
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmHelp.resources
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmJAM.resources
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmMessage.resources
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmSet.resources
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmUserPass.resources
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.Resources.resources
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM Folder Protector.vbproj.GenerateResource.Cache
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.exe
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.xml
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.pdb
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\JAM.exe.config
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\help.pdf
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\JAM.exe.manifest
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\JAM.application
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\JAM.exe
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\JAM.pdb
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\JAM.xml
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\Interop.AcroPDFLib.dll
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\bin\Release\AxInterop.AcroPDFLib.dll
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM Folder Protector.vbprojResolveAssemblyReference.cache
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmEdit.resources
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmHelp.resources
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmJAM.resources
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmSet.resources
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmUserPass.resources
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.Resources.resources
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM Folder Protector.vbproj.GenerateResource.Cache
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.TrustInfo.xml
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.exe.manifest
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.application
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.exe
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.xml
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.pdb
-C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmMessage.resources
