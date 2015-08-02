@@ -9,7 +9,7 @@
                 frmUserPass.Hide()
                 frmJAM.Show() ' shows the main form of the program
             Else
-                showMessage("JAM Folder Protector" + vbCrLf + "Incorrect password!")
+                MessageBox.Show("Incorrect password!", "JAM Folder Protector", MessageBoxButtons.RetryCancel, MessageBoxIcon.Exclamation)
                 frmUserPass.txtPass.Clear()
                 frmUserPass.txtPass.Focus()
             End If
