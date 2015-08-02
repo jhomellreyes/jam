@@ -4,6 +4,7 @@
         ' transferred to modPWHelp, and were modified
         ' for reusability
         writePassword(txtPass.Text)
+        Me.Close()
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
