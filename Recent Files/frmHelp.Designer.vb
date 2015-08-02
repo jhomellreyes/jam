@@ -30,7 +30,7 @@ Partial Class frmHelp
         '
         'btnGoBack
         '
-        Me.btnGoBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(194, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.btnGoBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.btnGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnGoBack.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnGoBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(194, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(57, Byte), Integer))
