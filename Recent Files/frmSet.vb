@@ -1,21 +1,20 @@
-﻿Imports System
-Imports System.IO
-Public Class frmSet
+﻿Public Class frmSet
     Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
-        Using sw As StreamWriter = File.CreateText(Directory.GetCurrentDirectory & "\index.txt") ' creates the password file
-            sw.Write(txtPass.Text)
-            sw.Flush()
-            sw.Close()
-        End Using
-        Me.Close()
-        frmUserPass.txtPass.Clear()
-        frmUserPass.Show()
+        ' Contents of writePassword() method were
+        ' transferred to modPWHelp, and were modified
+        ' for reusability
+        writePassword(txtPass.Text)
     End Sub
+
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         txtPass.Clear()
         txtPass.Focus()
     End Sub
-    Private Sub frmSet_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.CenterToScreen()
+
+    Private Sub txtPass_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPass.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            writePassword(txtPass.Text)
+            Me.Close()
+        End If
     End Sub
 End Class

@@ -32,6 +32,7 @@ Partial Class frmSet
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.LightGray
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnClear.FlatAppearance.BorderSize = 0
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 11.0!)
@@ -45,6 +46,7 @@ Partial Class frmSet
         'btnEnter
         '
         Me.btnEnter.BackColor = System.Drawing.Color.LightGray
+        Me.btnEnter.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEnter.FlatAppearance.BorderSize = 0
         Me.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEnter.Font = New System.Drawing.Font("Segoe UI", 11.0!)
@@ -58,18 +60,20 @@ Partial Class frmSet
         'lblSetYourPwd
         '
         Me.lblSetYourPwd.AutoSize = True
+        Me.lblSetYourPwd.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblSetYourPwd.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.lblSetYourPwd.ForeColor = System.Drawing.Color.White
+        Me.lblSetYourPwd.ForeColor = System.Drawing.Color.Black
         Me.lblSetYourPwd.Location = New System.Drawing.Point(12, 36)
         Me.lblSetYourPwd.Name = "lblSetYourPwd"
         Me.lblSetYourPwd.Size = New System.Drawing.Size(139, 21)
         Me.lblSetYourPwd.TabIndex = 4
-        Me.lblSetYourPwd.Text = "Set your password"
+        Me.lblSetYourPwd.Text = "&Set your password"
         '
         'txtPass
         '
         Me.txtPass.BackColor = System.Drawing.Color.White
         Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPass.Cursor = System.Windows.Forms.Cursors.Hand
         Me.txtPass.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPass.Location = New System.Drawing.Point(167, 38)
         Me.txtPass.Name = "txtPass"
@@ -81,7 +85,7 @@ Partial Class frmSet
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(194, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(502, 100)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnEnter)
