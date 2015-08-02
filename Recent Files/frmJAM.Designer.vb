@@ -351,6 +351,7 @@ Partial Class frmJAM
         Me.MaximizeBox = False
         Me.Name = "frmJAM"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "JAM Folder Protector"
         Me.grpLockUnlock.ResumeLayout(False)
         Me.grpLockUnlock.PerformLayout()
