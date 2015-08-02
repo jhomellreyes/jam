@@ -24,3 +24,4 @@ C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\ob
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.exe
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.xml
 C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.pdb
+C:\Users\Myra\Documents\Visual Studio 2013\Projects\Recent Files\Recent Files\obj\Release\JAM.frmMessage.resources

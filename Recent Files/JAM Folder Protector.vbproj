@@ -141,6 +141,12 @@
       <DependentUpon>frmJAM.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMessage.Designer.vb">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmSet.Designer.vb">
       <DependentUpon>frmSet.vb</DependentUpon>
     </Compile>
@@ -154,6 +160,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modJAMHelper.vb" />
+    <Compile Include="modPWHelp.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -179,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJAM.resx">
       <DependentUpon>frmJAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
+      <DependentUpon>frmMessage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSet.resx">
       <DependentUpon>frmSet.vb</DependentUpon>

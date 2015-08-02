@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JAM.exe" size="199624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JAM.exe" size="210376">
       <assemblyIdentity name="JAM" version="1.2.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n+WjEghLo2NCiCSB9ljSuDzXDLCgoJskh1ZgCmzwUbg=</dsig:DigestValue>
+        <dsig:DigestValue>CT/zavM2Zq6rhwRkGTbQpKKuIw+rQMs5rrtXkOWf7hg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
