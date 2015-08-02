@@ -2,7 +2,6 @@
 Imports System.IO
 Public Class frmJAM
     Private Sub frmJAM_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.CenterToScreen()
         loadRecentFiles()
     End Sub
     Private Sub frmJAM_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -41,14 +40,14 @@ Public Class frmJAM
             hideAllMenu()
             frmHelp.Show()
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            showMessage("An unexpected error occurred.")
         End Try
     End Sub
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
     End Sub
     Private Sub btnAbout_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
-        MessageBox.Show("JAM Folder Protector was developed by Abien Fred Agarap")
+        showMessage("JAM v1.2.0.0" + vbCrLf + "Developed by Abien Fred Agarap")
     End Sub
 
     Private Sub btnRemovePassword_Click(sender As Object, e As EventArgs) Handles btnRemovePassword.Click
