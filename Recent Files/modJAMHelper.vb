@@ -60,8 +60,11 @@ Module modJAMHelper
     Friend Sub addPassword()
         hideAllMenu()
         If Not System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory & "\index.txt") Then ' check if password file does not exist
-            frmSet.txtPass.Clear()
-            frmSet.Show() ' frmSet is the form for setting password
+            ' Re-organized code using With...End With construct
+            With frmSet
+                .txtPass.Clear()
+                .Show() ' frmSet is the form for setting password
+            End With
         Else
             showMessage("You already have a password!")
         End If
