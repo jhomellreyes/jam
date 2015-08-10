@@ -81,17 +81,20 @@ Module modJAMHelper
     End Sub
 
     Friend Sub browseForFolder()
-        If frmJAM.fbdJAM.ShowDialog = Windows.Forms.DialogResult.OK Then
-            frmJAM.txtPath.Text = frmJAM.fbdJAM.SelectedPath
-            If Not frmJAM.lbRecentFiles.Items.ToString = frmJAM.fbdJAM.SelectedPath Then
-                frmJAM.lbRecentFiles.Items.Add(frmJAM.fbdJAM.SelectedPath)
+        ' Re-constructed code using the With...End With construct
+        With frmJAM
+            If .fbdJAM.ShowDialog = Windows.Forms.DialogResult.OK Then
+                .txtPath.Text = .fbdJAM.SelectedPath
+                If Not .lbRecentFiles.Items.ToString = .fbdJAM.SelectedPath Then
+                    .lbRecentFiles.Items.Add(frmJAM.fbdJAM.SelectedPath)
+                End If
+                If Not System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory & "\recent.txt") Then
+                    CreateWrite() ' helper method for creating list of recent files
+                Else
+                    ExistWrite() ' helper method for creating list of recent files
+                End If
             End If
-            If Not System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory & "\recent.txt") Then
-                CreateWrite() ' helper method for creating list of recent files
-            Else
-                ExistWrite() ' helper method for creating list of recent files
-            End If
-        End If
+        End With
     End Sub
 
     Friend Sub loadRecentFiles()
