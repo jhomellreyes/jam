@@ -10,8 +10,11 @@
                 frmJAM.Show() ' shows the main form of the program
             Else
                 MessageBox.Show("Incorrect password!", "JAM Folder Protector", MessageBoxButtons.RetryCancel, MessageBoxIcon.Exclamation)
-                frmUserPass.txtPass.Clear()
-                frmUserPass.txtPass.Focus()
+                ' Re-organized code using With...End With construct
+                With frmUserPass.txtPass
+                    .Clear()
+                    .Focus()
+                End With
             End If
         End If
     End Sub

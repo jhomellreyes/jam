@@ -33,7 +33,6 @@ Partial Class frmHelp
         Me.btnGoBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.btnGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnGoBack.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnGoBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(194, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(57, Byte), Integer))
         Me.btnGoBack.FlatAppearance.BorderSize = 0
         Me.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGoBack.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

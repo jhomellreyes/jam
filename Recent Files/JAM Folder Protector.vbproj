@@ -159,6 +159,7 @@
     <Compile Include="frmUserPass.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="JAM.vb" />
     <Compile Include="modJAMHelper.vb" />
     <Compile Include="modPWHelp.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

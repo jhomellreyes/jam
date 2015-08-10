@@ -1,19 +1,23 @@
-﻿Imports System.IO
-Imports System.Security.AccessControl
+﻿Imports System.Security.AccessControl
 Module modJAMHelper
     Friend Sub showMessage(message As String)
         hideAllMenu()
-        frmMessage.lblMessage.Text = message
-        frmMessage.Show()
+        ' Re-organized code using With...End With construct
+        With frmMessage
+            .lblMessage.Text = message
+            .Show()
+        End With
     End Sub
 
     Friend Sub triggerMenu(isVisible As Boolean)
         ' Shortened code using conditional expression
-        frmJAM.btnPassword.Visible = If(isVisible, False, True)
-        frmJAM.btnHelp.Visible = If(isVisible, False, True)
-        frmJAM.btnAbout.Visible = If(isVisible, False, True)
-        frmJAM.btnExit.Visible = If(isVisible, False, True)
-
+        ' Re-organized code using With...End With construct
+        With frmJAM
+            .btnPassword.Visible = If(isVisible, False, True)
+            .btnHelp.Visible = If(isVisible, False, True)
+            .btnAbout.Visible = If(isVisible, False, True)
+            .btnExit.Visible = If(isVisible, False, True)
+        End With
         ' Long code using If-Else statements
         'If isVisible Then
         '    frmJAM.btnPassword.Visible = False
@@ -30,10 +34,12 @@ Module modJAMHelper
 
     Friend Sub triggerSubMenu(isVisible As Boolean)
         ' Shortened code using conditional expression
-        frmJAM.btnEditPassword.Visible = If(isVisible, False, True)
-        frmJAM.btnAddPassword.Visible = If(isVisible, False, True)
-        frmJAM.btnRemovePassword.Visible = If(isVisible, False, True)
-
+        ' Re-organized code using With...End With construct
+        With frmJAM
+            .btnEditPassword.Visible = If(isVisible, False, True)
+            .btnAddPassword.Visible = If(isVisible, False, True)
+            .btnRemovePassword.Visible = If(isVisible, False, True)
+        End With
         ' Long code using If-Else statements
         'If isVisible Then
         '    frmJAM.btnEditPassword.Visible = False
@@ -77,7 +83,7 @@ Module modJAMHelper
             If Not frmJAM.lbRecentFiles.Items.ToString = frmJAM.fbdJAM.SelectedPath Then
                 frmJAM.lbRecentFiles.Items.Add(frmJAM.fbdJAM.SelectedPath)
             End If
-            If Not File.Exists(Directory.GetCurrentDirectory & "\recent.txt") Then
+            If Not System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory & "\recent.txt") Then
                 CreateWrite() ' helper method for creating list of recent files
             Else
                 ExistWrite() ' helper method for creating list of recent files
@@ -86,8 +92,8 @@ Module modJAMHelper
     End Sub
 
     Friend Sub loadRecentFiles()
-        If File.Exists(Directory.GetCurrentDirectory & "\recent.txt") Then ' checks if there is a list of recent folders
-            For Each line As String In File.ReadAllLines(Directory.GetCurrentDirectory & "\recent.txt")
+        If System.IO.File.Exists(System.IO.Directory.GetCurrentDirectory & "\recent.txt") Then ' checks if there is a list of recent folders
+            For Each line As String In System.IO.File.ReadAllLines(System.IO.Directory.GetCurrentDirectory & "\recent.txt")
                 frmJAM.lbRecentFiles.Items.Add(line)
             Next
         End If
@@ -95,10 +101,10 @@ Module modJAMHelper
 
     Friend Sub lockFolder(path As String)
         Try
-            File.SetAttributes(path, FileAttributes.Hidden) ' set the file attribute of selected folder to hidden
+            System.IO.File.SetAttributes(path, System.IO.FileAttributes.Hidden) ' set the file attribute of selected folder to hidden
             Dim fs = System.IO.File.GetAccessControl(path)
             fs.AddAccessRule(New FileSystemAccessRule(Environment.UserName, FileSystemRights.FullControl, AccessControlType.Deny))
-            File.SetAccessControl(path, fs)
+            System.IO.File.SetAccessControl(path, fs)
             showMessage(path + vbCrLf + "is now locked!")
         Catch ex As Exception
             showMessage("An unexpected error occurred.")
@@ -107,10 +113,10 @@ Module modJAMHelper
 
     Friend Sub unlockFolder(path As String)
         Try
-            Dim fs As FileSystemSecurity = File.GetAccessControl(path)
+            Dim fs As FileSystemSecurity = System.IO.File.GetAccessControl(path)
             fs.RemoveAccessRule(New FileSystemAccessRule(Environment.UserName, FileSystemRights.FullControl, AccessControlType.Deny))
-            File.SetAccessControl(path, fs)
-            File.SetAttributes(path, FileAttributes.Normal)
+            System.IO.File.SetAccessControl(path, fs)
+            System.IO.File.SetAttributes(path, System.IO.FileAttributes.Normal)
             showMessage(path + vbCrLf + "is now unlocked!")
         Catch ex As Exception
             showMessage("An unexpected error occurred.")
@@ -118,7 +124,7 @@ Module modJAMHelper
     End Sub
 
     Friend Sub CreateWrite()
-        Using sw As StreamWriter = File.CreateText(Directory.GetCurrentDirectory & "\recent.txt") ' sw: local variable
+        Using sw As System.IO.StreamWriter = System.IO.File.CreateText(System.IO.Directory.GetCurrentDirectory & "\recent.txt") ' sw: local variable
             sw.WriteLine(frmJAM.fbdJAM.SelectedPath)
             sw.Flush()
             sw.Close()
@@ -126,9 +132,9 @@ Module modJAMHelper
     End Sub
 
     Friend Sub ExistWrite()
-        For Each line As String In File.ReadAllLines(Directory.GetCurrentDirectory & "\recent.txt")
+        For Each line As String In System.IO.File.ReadAllLines(System.IO.Directory.GetCurrentDirectory & "\recent.txt")
             If Not line = frmJAM.fbdJAM.SelectedPath Then
-                Using sw As StreamWriter = File.AppendText(Directory.GetCurrentDirectory & "\recent.txt") ' sw: local variable
+                Using sw As System.IO.StreamWriter = System.IO.File.AppendText(System.IO.Directory.GetCurrentDirectory & "\recent.txt") ' sw: local variable
                     sw.WriteLine(frmJAM.fbdJAM.SelectedPath)
                     sw.Flush()
                     sw.Close()

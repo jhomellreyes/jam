@@ -8,8 +8,11 @@
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        txtPass.Clear()
-        txtPass.Focus()
+        ' Re-organized code using With...End With construct
+        With txtPass
+            .Clear()
+            .Focus()
+        End With
     End Sub
 
     Private Sub txtPass_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPass.KeyDown
