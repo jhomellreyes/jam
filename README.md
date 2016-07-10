@@ -2,11 +2,11 @@
 JAM Folder Protector is a software designed to provide personal folder security at the reach of simple computer users.
 
 # Installation
---
+
 Download the installation file for JAM from <a href="https://github.com/AFAgarap/jam/releases/download/1.2/JAMv1.2.exe">here</a>. Then, just go through the installation procedures.
 
 # System Requirements
---
+
 Your computer must have the following specifications to install and to use JAM:
 <table>
 <tr>
@@ -28,7 +28,7 @@ Your computer must have the following specifications to install and to use JAM:
 </table>
 
 # Tested Platform
---
+
 JAM Folder Protector was developed and tested in a computer system with the following specifications:
 <table>
 <tr>
@@ -50,5 +50,5 @@ JAM Folder Protector was developed and tested in a computer system with the foll
 </table>
 
 # Usage
---
+
 You can read its manual <a href='https://github.com/AFAgarap/jam/blob/master/Recent%20Files/help.pdf'>here</a>.
